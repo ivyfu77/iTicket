@@ -29,7 +29,7 @@
 			.search {
 				position: absolute;
 				right: 10px;
-				color: red;
+				color: #FF3738;
 			}
 			.mobile-logo {
 				height:35px;
@@ -40,7 +40,7 @@
 			    position: absolute;
 			    left: 10px;
 			    font-size: 1.5em;
-			    color: red;
+			    color: #FF3738;
 			}
 			#fullScreenImage {
 				display: flex;
@@ -54,6 +54,31 @@
 			#fullScreenImage img {
 				height: 500px;
 			}
+			.search-box {
+				position: absolute;
+				top: 350px;
+				background-color: white;
+				height: 50px;
+				width: 250px;
+				border-radius: 10px;
+			}
+			.search-btn {
+				position: absolute;
+				right: 0;
+				top: 100px;
+				background-color: #FF3738;
+				height: 100%;
+				width: 50px;
+				border-top-right-radius: 10px;
+				border-bottom-right-radius: 10px;
+			}
+			.search-box a {
+				position: absolute;
+				right: 15px;
+				top: 12px;
+				font-size: 1.3em;
+				color: white;
+			}
 		</style>
 		<link rel="stylesheet" href="/style/style.css" async defer>
     </head>
@@ -65,6 +90,10 @@
         </header>
         <section id="fullScreenImage">
         	<div><img src="imgs/home-page-background.png" alt="Backgound Image"></div>
+        	<div class="search-box">
+        		<div class="search-btn"></div>
+        		<a href="#"><i class="fa fa-search"></i></a>
+        	</div>
         </section>
         <section id="events"></section>
         <section id="sell-with-us"></section>
