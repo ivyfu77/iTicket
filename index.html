@@ -17,14 +17,20 @@
 			}
 			body {
 				background-color: white;
+				font-family: Arial, sans-serif;
 			}
 			header {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100vw;
 				display: flex;
 				align-items: center;
 				justify-content: center;
 				height: 70px;
 				background-color: black;
 				color: white;
+			    border-bottom: 1px solid #3c3939;
 			}
 			.search {
 				position: absolute;
@@ -43,31 +49,44 @@
 			    color: #FF3738;
 			}
 			#fullScreenImage {
+				position: relative;
+				width: 100vw;
+				top: 70px;
 				display: flex;
 				justify-content: center;
 				align-items: center;
 			}
-			#fullScreenImage div {
+			.background {
 				margin-top: -100px;
 				z-index: -1;
 			}
 			#fullScreenImage img {
 				height: 500px;
 			}
-			.search-box {
+			.search-container {
 				position: absolute;
-				top: 350px;
+			    top: 100px;
+			    width: 90%;
+			}
+			.search-container h1 {
+			    color: white;
+			    font-size: 2.5em;
+			    font-weight: 300;
+			    margin-bottom: 20px;
+			    margin-left: 5px;
+			}
+			.search-box {
+				position: relative;
 				background-color: white;
 				height: 50px;
-				width: 250px;
+				width: 100%;
 				border-radius: 10px;
 			}
 			.search-btn {
 				position: absolute;
 				right: 0;
-				top: 100px;
 				background-color: #FF3738;
-				height: 100%;
+				height: 50px;
 				width: 50px;
 				border-top-right-radius: 10px;
 				border-bottom-right-radius: 10px;
@@ -79,6 +98,13 @@
 				font-size: 1.3em;
 				color: white;
 			}
+			#events { /*Test only*/
+				position: relative;
+				top: 70px;
+			    width: 100vw;
+			    height: 500px;
+			    background-color: pink;
+			}
 		</style>
 		<link rel="stylesheet" href="/style/style.css" async defer>
     </head>
@@ -89,10 +115,13 @@
         	<p class="search"><a href="#"><i class="fa fa-search"></i></a></p>
         </header>
         <section id="fullScreenImage">
-        	<div><img src="imgs/home-page-background.png" alt="Backgound Image"></div>
-        	<div class="search-box">
-        		<div class="search-btn"></div>
-        		<a href="#"><i class="fa fa-search"></i></a>
+        	<div class="background"><img src="imgs/home-page-background.png" alt="Backgound Image"></div>
+        	<div class="search-container">
+	        	<h1>Find your live experience</h1>
+	        	<div class="search-box">
+	        		<div class="search-btn"></div>
+	        		<a href="#"><i class="fa fa-search"></i></a>
+	        	</div>
         	</div>
         </section>
         <section id="events"></section>
