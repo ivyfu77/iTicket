@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="utf-8">
+		<title>iTicket</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			/* Start with mobile style */
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			a {
+			    text-decoration: none;
+			    color: inherit;
+			}
+			body {
+				background-color: white;
+			}
+			header {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 70px;
+				background-color: black;
+				color: white;
+			}
+			.search {
+				position: absolute;
+				right: 10px;
+				color: red;
+			}
+			.mobile-logo {
+				height:35px;
+			}
+			.toggle-btn {
+			    /*display: none;
+			    color: rgba(101, 96, 96, 0.73);*/
+			    position: absolute;
+			    left: 10px;
+			    font-size: 1.5em;
+			    color: red;
+			}
+			#fullScreenImage {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			#fullScreenImage div {
+				margin-top: -100px;
+				z-index: -1;
+			}
+			#fullScreenImage img {
+				height: 500px;
+			}
+		</style>
+		<link rel="stylesheet" href="/style/style.css" async defer>
+    </head>
+    <body>
+        <header>
+        	<div class="toggle-btn"><a onclick="toggleMenu()"><i class="fa fa-bars" aria-hidden="true"></i></a></div>
+        	<img class="mobile-logo" src="imgs/logo.png" alt="iTicket logo">
+        	<p class="search"><a href="#"><i class="fa fa-search"></i></a></p>
+        </header>
+        <section id="fullScreenImage">
+        	<div><img src="imgs/home-page-background.png" alt="Backgound Image"></div>
+        </section>
+        <section id="events"></section>
+        <section id="sell-with-us"></section>
+        <section id="partners"></section>
+        <section id="footer">
+        	<section id="link-footer"></section>
+        	<section id="bottom-footer"></section>
+        </section>
+
+    </body>
+</html>
