@@ -19,6 +19,9 @@
 				background-color: white;
 				font-family: Arial, sans-serif;
 			}
+			ul li {
+			    list-style: none;
+			}
 			header {
 				position: fixed;
 				top: 0;
@@ -159,15 +162,66 @@
 				color: white;
 				background-color: #FF3738;
 			}
+			#toggleMenu {
+				display: block;
+				position: fixed;
+				overflow: scroll;
+				background-color: rgba(0, 0, 0, 0.74);
+				color: white;
+				font-size: 1.2em;
+				text-align: center;
+				width: 100vw;
+				height: 100%;
+				-webkit-transform: translate(-100vw, 0px);
+				transform: translate(-100vw,0px);
+				transition: transform 0.3s ease;
+				z-index: 11;
+			}
+			#toggleMenu ul {
+				margin-top: 70px;
+			    margin-bottom: 20px;
+			}
+			#toggleMenu .close {
+				position: absolute;
+			    top: 20px;
+			    right: 20px;
+			    color: red;
+			    font-size: 1.5em;
+			}
+			#toggleMenu li {
+				line-height: 200%;
+				cursor: pointer;
+			}
+			#toggleMenu.open {
+			  -webkit-transform: translate(0, 0px);
+			  transform: translate(0, 0px);
+			}
 		</style>
 		<link rel="stylesheet" href="/style/style.css" async defer>
     </head>
     <body>
         <header>
-        	<div class="toggle-btn"><a onclick="toggleMenu()"><i class="fa fa-bars" aria-hidden="true"></i></a></div>
+        	<div class="toggle-btn"><a onclick="openMenu()"><i class="fa fa-bars" aria-hidden="true"></i></a></div>
         	<img class="mobile-logo" src="imgs/logo.png" alt="iTicket logo">
         	<p class="search"><a href="#"><i class="fa fa-search"></i></a></p>
         </header>
+        <div id="toggleMenu">
+        	<a href="#" class="close" onclick="closeMenu()"><i class="fa fa-times"></i></a>
+        	<ul>
+        		<li>Theatre</li>
+        		<li>Music</li>
+        		<li>Arts</li>
+        		<li>Dance</li>
+        		<li>Nightlife</li>
+        		<li>Festivals</li>
+        		<li>Expos</li>
+        		<li>Sports</li>
+        		<li>Business</li>
+        		<li>Schools</li>
+        		<li>Lifestyle</li>
+        		<li>Community</li>
+        	</ul>
+        </div>
         <section id="fullScreenImage">
         	<div class="search-container">
 	        	<h1>Find your live experience</h1>
@@ -194,6 +248,15 @@
         	<section id="link-footer"></section>
         	<section id="bottom-footer"></section>
         </section>
-
+		<script type="text/javascript">
+			function openMenu() {
+				var obj = document.getElementById("toggleMenu");
+				obj.className += "open";
+			}
+			function closeMenu() {
+				var obj = document.getElementById("toggleMenu");
+				obj.className = "";				
+			}
+		</script>
     </body>
 </html>
