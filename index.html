@@ -109,8 +109,55 @@
 			#events { /*Test only*/
 				position: relative;
 			    width: 100vw;
-			    height: 500px;
+			    height: 100px;
 			    background-color: pink;
+			}
+			#sell-with-us {
+				display: flex;
+				justify-content: center;
+				height: 500px;
+			    background-image: url(imgs/sell-with-us-background1.png);
+			    background-position: center left;
+			    background-repeat: no-repeat;
+			    background-size: 500%;
+			}
+			#sell-with-us h1 {
+				font-size: 2.5em;
+				font-weight: 300;
+				padding-top: 60px;
+				color:#2f2f2f;
+			}
+			#sell-with-us p {
+				color: #737272;
+			    line-height: 150%;
+			    padding-top: 20px;
+			}
+			.with-us-container {
+				width: 90%;
+			}
+			.with-us-btn-container {
+				display: flex;
+				align-items: center;
+			    margin-top: 40px;
+			}
+			.with-us-btn-container div {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 12px;
+				height: 50px;
+				width: 45%;
+				border-radius: 5px;
+				text-align: center;
+				letter-spacing: 2px;
+				margin-left: 10px;
+			}
+			.with-us-btn-container .left-btn {
+				background-color: white;
+			}
+			.with-us-btn-container .right-btn {
+				color: white;
+				background-color: #FF3738;
 			}
 		</style>
 		<link rel="stylesheet" href="/style/style.css" async defer>
@@ -132,7 +179,16 @@
         	</div>
         </section>
         <section id="events"></section>
-        <section id="sell-with-us"></section>
+        <section id="sell-with-us">
+	        <div class="with-us-container">
+	        	<h1>Sell tickets to your next event with us</h1>
+	        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur voluptatem similique cum ea expedita enim a deleniti accusamus praesentium reprehenderit. </p>
+	        	<div class='with-us-btn-container'>
+	        		<div class="left-btn">LEARN MORE</div>
+	        		<div class="right-btn">GET IN TOUCH</div>
+	        	</div>
+        	</div>
+        </section>
         <section id="partners"></section>
         <section id="footer">
         	<section id="link-footer"></section>
