@@ -61,7 +61,7 @@ header {
 	background-position: 32% -95px;
 	background-size: 1014px;
 	background-repeat: no-repeat;
-	margin-top: 70px;
+	//margin-top: 70px;
 }
 
 .search-container {
@@ -229,6 +229,12 @@ header {
 		font-size: 1.2em;
 	}
 	.search {
+		display: none;
+	}
+	header {
+		position: relative;
+	}
+	#toggleMenu {
 		display: none;
 	}
 }
