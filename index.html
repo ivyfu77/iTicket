@@ -9,11 +9,13 @@
     </head>
     <body>
         <header>
-        	<div class="toggle-btn"><a onclick="openMenu()"><i class="fa fa-bars" aria-hidden="true"></i></a></div>
-        	<img class="mobile-logo" src="imgs/logo.png" alt="iTicket logo">
-        	<div class="search-event"><i class="fa fa-search"></i>&nbsp;SEARCH EVENTS</div>
-        	<div class="my-account"><i class="fa fa-user-o"></i>&nbsp;MY ACCOUNT</div>
-        	<p class="search"><a href="#"><i class="fa fa-search"></i></a></p>
+            <div class="header-container">
+            	<div class="toggle-btn"><a onclick="openMenu()"><i class="fa fa-bars" aria-hidden="true"></i></a></div>
+            	<img class="mobile-logo" src="imgs/logo.png" alt="iTicket logo">
+            	<div class="search-event"><i class="fa fa-search"></i>&nbsp;SEARCH EVENTS</div>
+            	<div class="my-account"><i class="fa fa-user-o"></i>&nbsp;MY ACCOUNT</div>
+            	<p class="search"><a href="#"><i class="fa fa-search"></i></a></p>
+            </div>
         </header>
         <div id="toggleMenu">
         	<a href="#" class="close" onclick="closeMenu()"><i class="fa fa-times"></i></a>
@@ -44,7 +46,8 @@
         </section>
         <section id="events"></section>
         <section id="sell-with-us">
-	        <div class="with-us-container">
+            <div class="dot-mask"></div>
+            <div class="with-us-container">
 	        	<h1>Sell tickets to your next event with us</h1>
 	        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur voluptatem similique cum ea expedita enim a deleniti accusamus praesentium reprehenderit. </p>
 	        	<div class='with-us-btn-container'>
